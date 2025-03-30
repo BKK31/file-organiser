@@ -47,6 +47,7 @@ for file in files:
         else:
             target = '99-Archives'
 
-    final = os.path.join(dest, target)
+    destination = os.path.join(dest, target)
+    final = os.path.join(destination, file)
 
     shutil.move(full_path, final)
